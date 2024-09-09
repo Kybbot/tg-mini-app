@@ -8,7 +8,7 @@ if (window.Telegram) {
 		cardLink.addEventListener("click", () => {
 			const href = cardLink.dataset.href!;
 
-			window.Telegram.WebApp.openLink(href);
+			window.Telegram.WebApp.openLink(href, {try_instant_view: true});
 		});
 	}
 }
